@@ -8,7 +8,6 @@ import usersRouter from "./routes/users";
 
 // Import Apollo Server
 import { ApolloServer } from "@apollo/server";
-import { buildSubgraphSchema } from "@apollo/subgraph";
 import { expressMiddleware } from "@apollo/server/express4";
 import resolvers from "./resolvers.js";
 import typeDefinitions from "./typeDefinitions.js";
