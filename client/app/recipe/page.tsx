@@ -27,7 +27,6 @@ const Item = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
-  console.log(searchParam.get("id"));
   return (
     <Suspense>
       <section className="relative h-full">
@@ -44,9 +43,6 @@ const Item = () => {
             </div>
             <div className="data w-full lg:pr-8 pr-0 xl:justify-start justify-center flex items-center max-lg:pb-10 xl:my-2 lg:my-5 my-0">
               <div className="data w-full max-w-xl">
-                {/* <p className="text-lg font-medium leading-8 text-indigo-600 mb-4">
-                Clothing&nbsp; /&nbsp; Menswear
-              </p> */}
                 <h2 className="font-manrope font-bold text-3xl leading-10 text-gray-900 mb-2 capitalize">
                   {data.recipe.name}
                 </h2>
