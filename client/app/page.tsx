@@ -4,7 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import Recipes from "./Recipes";
 export default function Home() {
   const client = new ApolloClient({
-    uri: "http://localhost:3001/graphql",
+    uri: "https://recipeshub-3fa3.onrender.com/graphql",
     cache: new InMemoryCache(),
   });
 
