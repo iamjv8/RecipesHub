@@ -11,6 +11,7 @@ const typeDefinitions = `
         ingredients: [String!]
         instructions: [String!]
         rating: Float
+        reviewCount: Int
         cuisine: String
         cookTime: Int
         mealType: [String]
